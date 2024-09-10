@@ -1,0 +1,48 @@
+:root {
+  --text: #1a1228;
+  --header-bg: #6366f1;
+  --hero-bg: #a1a7f4;
+  --main-bg: #c9d2fa;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  background-color: var(--header-bg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0 / 0.1),
+    0 2px 4px -2px rgba(0, 0, 0 / 0.1);
+}
+
+.hero {
+  padding: 5rem 2rem;
+  background-color: var(--hero-bg);
+  flex-grow: 1;
+}
+
+.main {
+  min-height: 55rem;
+  padding: 5rem 2rem;
+  background-color: var(--main-bg);
+}

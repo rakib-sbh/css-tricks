@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trick with Sticky</title>
+
+    <style>
+      :root {
+        --background-color: #a7aeba;
+        --rolodex-bg-color: #fff;
+        --rolodex-shadow-color: rgba(0, 0, 0, 0.1);
+        --header-bg-color: #4e9a9b;
+        --header-text-color: white;
+        --header-border-color: #3a797c;
+        --border-color: #ddd;
+        --item-hover-bg-color: #f0f0f0;
+
+        --base-font-size: 16px;
+        --spacing-unit: 1rem;
+        --header-font-size: 1.125rem;
+        --rolodex-width: 35rem;
+        --rolodex-border-radius: 0.45rem;
+        --rolodex-shadow: 0 0 0.625rem var(--rolodex-shadow-color);
+        --item-padding: 1.25rem;
+        --sticky-header-padding: 1.25rem;
+        --border-width: 0.0625rem;
+      }
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: medium;
+        font-size: var(--base-font-size);
+        margin: 0;
+        padding: var(--spacing-unit);
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+      }
+      h2 {
+        margin: 0;
+      }
+
+      .roledex {
+        width: var(--rolodex-width);
+        margin: 0 auto;
+        background-color: var(--rolodex-bg-color);
+        box-shadow: var(--rolodex-shadow);
+        border-radius: var(--rolodex-border-radius);
+        overflow: hidden;
+        max-height: min(calc(100vh - var(--spacing-unit) * 2), 30rem);
+        overflow-y: scroll;
+      }
+
+      .sticky-header {
+        background-color: var(--header-bg-color);
+        color: var(--header-text-color);
+        padding: var(--sticky-header-padding);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        border-bottom: var(--border-width) solid var(--header-border-color);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li {
+        padding: var(--item-padding);
+        border-bottom: var(--border-width) solid var(--border-color);
+        transition: background-color 0.3s;
+      }
+
+      ul li:hover {
+        background-color: var(--item-hover-bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rolodex">
+      <div class="list-section">
+        <h2 class="sticky-header">A</h2>
+        <ul>
+          <li>Abigail Adams</li>
+          <li>Adam Anderson</li>
+          <li>Aiden Alvarez</li>
+          <li>Alexander Armstrong</li>
+          <li>Alice Atwood</li>
+          <li>Amelia Archer</li>
+          <li>Andrew Abbott</li>
+          <li>Anthony Austin</li>
+          <li>Ava Allen</li>
+          <li>Avery Andrews</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h2 class="sticky-header">B</h2>
+        <ul>
+          <li>Benjamin Baker</li>
+          <li>Bethany Barnes</li>
+          <li>Blake Bennett</li>
+          <li>Brandon Brooks</li>
+          <li>Brianna Bell</li>
+          <li>Brittany Brown</li>
+          <li>Brooke Baxter</li>
+          <li>Brooklyn Bryant</li>
+          <li>Bryan Butler</li>
+          <li>Bryce Bishop</li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <h2 class="sticky-header">C</h2>
+        <ul>
+          <li>Caleb Carter</li>
+          <li>Cameron Clark</li>
+          <li>Caroline Chambers</li>
+          <li>Catherine Cooper</li>
+          <li>Charles Coleman</li>
+          <li>Charlotte Collins</li>
+          <li>Chloe Campbell</li>
+          <li>Christopher Cook</li>
+          <li>Claire Chapman</li>
+          <li>Connor Crawford</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

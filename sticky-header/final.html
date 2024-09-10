@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Sticky Header with Grid</title>
+
+    <style>
+      :root {
+        --text: #1a1228;
+        --header-bg: #6366f1;
+        --hero-bg: #a1a7f4;
+        --main-bg: #c9d2fa;
+      }
+
+      body,
+      html {
+        margin: 0;
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: medium;
+        font-size: 16px;
+        color: var(--text);
+        display: grid;
+        grid-template-rows: min-content 1fr;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .above-the-fold-spacer {
+        height: 100vh;
+        grid-column: 1 / -1;
+        grid-row: 1 / span 2;
+      }
+
+      .header {
+        position: sticky;
+        top: 0;
+        background-color: var(--header-bg);
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding: 2rem;
+      }
+      .hero {
+        background-color: var(--hero-bg);
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding: 5rem 2rem;
+      }
+
+      .main {
+        background-color: var(--main-bg);
+        min-height: 55rem;
+        padding: 5rem 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="above-the-fold-spacer"></div>
+    <div class="header">Header</div>
+    <div class="hero">Hero</div>
+    <main class="main">Main</main>
+  </body>
+</html>

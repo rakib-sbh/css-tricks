@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Grid</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .empty {
+        height: 100vh;
+        grid-column-start: 1;
+        grid-row-start: 1 / -1;
+      }
+      .a {
+        position: sticky;
+        top: 0;
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+      .b {
+        background-color: green;
+      }
+      .c {
+        background-color: hotpink;
+      }
+      .d {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="empty">Empty</div>
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+    </div>
+  </body>
+</html>
