@@ -1,0 +1,170 @@
+<!-- Tutotial Link: https://css-tricks.com/books/greatest-css-tricks/scroll-indicator/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Indicator</title>
+
+    <style>
+      header {
+        position: fixed;
+        top: 0;
+        height: 125px;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+      }
+
+      main {
+        margin-top: 128px;
+        padding: 2rem;
+      }
+
+      body {
+        background: linear-gradient(to right top, #0089f2 50%, #ddd 50%);
+        background-size: 100% calc(100% - 100vh + 129px);
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 128px;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        background: white;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Scroll Indicator</h1>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+        deleniti accusantium quasi ab ad officia cupiditate sed aliquam nobis
+        expedita velit dolorum perspiciatis pariatur nam vero et magnam soluta
+        tempora!
+      </p>
+      <p>
+        Eveniet deserunt consequatur porro molestiae nulla optio quis totam
+        libero iste nemo odit eum facilis sapiente. Harum similique cupiditate
+        voluptas ea optio sunt molestias eius ab qui obcaecati nesciunt id?
+      </p>
+      <p>
+        Necessitatibus delectus sint vitae eos quasi optio esse dignissimos enim
+        laborum ipsum harum perspiciatis eaque. Magnam fugiat delectus neque
+        laboriosam in accusamus a veniam inventore asperiores consequatur nihil
+        quae quo.
+      </p>
+      <p>
+        Eligendi quaerat nesciunt sint nobis qui? Temporibus maiores esse
+        molestiae hic cum culpa sed recusandae dolore sequi modi. Quos illum
+        debitis odio consequatur voluptatum error aliquam rem similique officia
+        recusandae.
+      </p>
+      <p>
+        Ex suscipit earum reiciendis eaque dolorem inventore accusantium modi
+        voluptatum saepe cum quam tempora autem corrupti illum deleniti iure
+        rerum mollitia quo ducimus soluta ea! Illum aliquid consectetur vitae
+        quod?
+      </p>
+      <p>
+        Minus rem tempora quo. Deleniti mollitia dignissimos laborum quis quos
+        facilis dolore soluta error provident recusandae veniam minus
+        consequatur blanditiis. Facere tempore praesentium soluta fugiat quia
+        eligendi dolores ullam doloribus!
+      </p>
+      <p>
+        Aut nulla perferendis officiis accusamus ut aspernatur hic possimus amet
+        blanditiis incidunt repudiandae ullam inventore ipsam recusandae nihil
+        provident facilis totam quibusdam natus eligendi optio quia sapiente
+        rerum quos illo?
+      </p>
+      <p>
+        Porro soluta nisi impedit voluptatem ex accusantium facilis amet quod
+        blanditiis quia similique totam enim id ratione minus quo modi sequi nam
+        dicta iste aliquid itaque velit accusamus quibusdam consequuntur.
+      </p>
+      <p>
+        Ab assumenda in ad nesciunt recusandae labore voluptates vero suscipit
+        tenetur ullam sint beatae odio harum quo aperiam quas temporibus
+        pariatur consectetur saepe eveniet minus voluptatem atque iusto
+        similique repudiandae?
+      </p>
+      <p>
+        In enim odit repellat maxime harum eum expedita fuga vel eaque quaerat
+        optio hic sapiente eveniet neque dolorum eligendi pariatur possimus
+        aliquid minus officiis mollitia quia voluptates sunt nulla est!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestias
+        voluptates, officiis delectus tempora molestiae nobis velit quasi hic
+        repellendus consequatur non vel architecto perspiciatis a asperiores
+        atque quibusdam nesciunt reiciendis reprehenderit incidunt quisquam.
+        Doloribus, ut dolorum veniam eaque tempora, dolorem, itaque dignissimos
+        maiores officia nulla sequi. Iure molestias ut quod, earum inventore
+        corrupti, aperiam, culpa quibusdam fuga voluptate laborum aliquid.
+        Consequuntur tempora qui, optio voluptate nesciunt eos ullam? Culpa
+        laboriosam est aliquid corrupti dolor natus atque harum doloribus amet
+        reiciendis? Aut temporibus alias, est enim quo aliquid? Expedita
+        dignissimos veritatis, illo sit saepe praesentium suscipit eligendi quae
+        qui facere optio, corporis necessitatibus eos alias quod hic molestiae
+        rerum quaerat exercitationem, repellat recusandae eveniet? Blanditiis
+        laborum soluta beatae veniam incidunt asperiores repellat omnis, itaque
+        quisquam harum perferendis optio quia cumque necessitatibus sint
+        doloribus ut reiciendis, neque perspiciatis veritatis accusamus
+        exercitationem corrupti? Expedita pariatur fugit, obcaecati provident
+        unde sapiente odio quae dolores accusamus debitis numquam dignissimos
+        voluptas velit sequi corporis molestias aliquam maiores laborum impedit,
+        reprehenderit adipisci in. Earum corrupti eveniet dolor atque numquam
+        aliquid, impedit laudantium iste sunt a cum blanditiis at veniam esse
+        ipsum? Accusantium, blanditiis cupiditate molestias, rerum nostrum fugit
+        quisquam iure iste dolor explicabo amet, reprehenderit facere.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, atque
+        libero! Repellendus porro cum ex possimus minus quasi corrupti debitis
+        explicabo, maiores quas! Similique doloremque autem eaque commodi aut
+        quae assumenda vel! Corrupti expedita magni error doloremque excepturi
+        tenetur quo laborum a molestiae ad vitae culpa, commodi itaque aliquam.
+        Recusandae odio ratione, repudiandae maxime id nobis, iusto culpa dicta
+        earum, voluptatem voluptas laudantium. Doloribus ipsam commodi libero
+        aut reiciendis, excepturi accusamus illo minus dolores ea nisi ex alias
+        magni consectetur quod veniam quos ullam perspiciatis eos porro tenetur
+        quasi, perferendis amet ducimus. Quia, officia? Suscipit eaque voluptas
+        voluptates, adipisci at ducimus fugit quaerat officiis blanditiis
+        accusamus vel laboriosam quibusdam velit obcaecati voluptate praesentium
+        eum dolor unde! Repudiandae quia sequi, laborum animi harum possimus et.
+        Dignissimos quisquam sapiente iure ducimus saepe similique unde eaque
+        quo blanditiis earum asperiores expedita iste numquam dicta porro
+        doloribus officia nulla id, maxime ex corrupti repudiandae. Debitis aut
+        nihil id mollitia deleniti. Cumque, nostrum unde aliquid molestiae
+        eligendi harum dicta quo delectus a illum praesentium error molestias,
+        voluptatum iusto debitis deleniti quos suscipit nesciunt porro quaerat
+        nobis incidunt dolor ullam dolorem. Vitae, qui sequi sint commodi
+        quaerat quae dicta, tempora iure quisquam pariatur porro minus sit?
+        Veritatis est, sequi nemo quidem recusandae doloremque natus quas itaque
+        provident ullam debitis nobis sint sed illum. Libero, ab corrupti
+        laudantium rem maxime cum pariatur dolore sunt ex assumenda praesentium
+        voluptates eius, voluptas accusamus ut maiores debitis mollitia
+        provident numquam in? Modi, consectetur exercitationem! Pariatur magnam
+        et, hic nostrum corrupti asperiores, praesentium consequuntur nulla,
+        labore itaque ratione quibusdam quas nemo odit voluptates. Obcaecati aut
+        repellendus soluta vero eum, eaque quibusdam repellat laboriosam magnam
+        quas quia laborum ducimus delectus ea fugit et numquam atque sit id.
+        Libero, consequuntur ad itaque perferendis earum sit ipsa sint cumque
+        aspernatur. At consequatur id suscipit!
+      </p>
+    </main>
+  </body>
+</html>
